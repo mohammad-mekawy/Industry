@@ -1,0 +1,466 @@
+/* poster */
+.poster {
+  background-image: url(../imgs/about-poster.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.poster .layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 85px 0px;
+}
+
+.poster .layer h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* /poster */
+
+/* breadcrumb */
+.breadcrumb {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  padding: 18px 2px;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+}
+
+.breadcrumb li:first-child::after {
+  content: "\f531";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+.breadcrumb li:first-child a:hover {
+  color: var(--main-color);
+}
+
+.breadcrumb button {
+  background: var(--main-color);
+  padding: 15px 30px;
+  border: 0px;
+}
+
+.breadcrumb button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.breadcrumb button:hover {
+  background-color: #353030;
+}
+
+/* /breadcrumb */
+
+main {
+  padding: 60px 0px;
+  color: #a7a7a7;
+}
+
+/* books */
+
+.books h5 {
+  color: #a7a7a7;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+.books select {
+  -webkit-box-shadow: inset 0 0px 0px, 0 0 0px;
+  box-shadow: inset 0 0px 0px, 0 0 0px;
+  font-size: 14px;
+  border: 1px solid gainsboro;
+  width: 100%;
+  height: 46px;
+  padding: 0px 9px;
+  margin-bottom: 30px;
+}
+
+.books select:focus {
+  border-color: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0px 0px, 0 0 0px;
+  box-shadow: inset 0 0px 0px, 0 0 0px;
+}
+
+.books .con {
+  margin: 30px 0px 15px;
+}
+
+.books .con .img {
+  text-align: center;
+  width: 100%;
+  padding: 30px 55px;
+  background: #efefef;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid transparent;
+  transition: 0.7s;
+}
+
+.books .con .img span {
+  position: absolute;
+  background: var(--main-color);
+  padding: 40px 40px 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  left: -51px;
+  transform: rotate(-45deg);
+  display: inline-block;
+  top: -28px;
+}
+
+.books .con .img img {
+  width: 75%;
+  margin: auto;
+  box-shadow: -3px 2px 5px 4px;
+}
+
+.books .con .img .img-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #211c6791;
+  top: 0;
+  left: 0;
+  padding: 10%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.books .con .img .img-layer i {
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  background: var(--main-color);
+  padding: 10px;
+  border: 3px solid var(--main-color);
+  transition: 0.5s;
+}
+
+.books .con .img .img-layer i:hover {
+  background: #222;
+}
+
+.books .con .text {
+  border: 1px solid transparent;
+  padding-left: 8px;
+}
+
+.books .con .text h4 {
+  font-size: 19px;
+  color: #000;
+  font-weight: bold;
+}
+
+.books .con .text p {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.books .con .text p span {
+  color: gainsboro;
+}
+
+.books .con > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.books .con > a button {
+  border: 0px;
+  background: #211c67;
+  padding: 15px;
+  font-size: 15px;
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.books .con:hover .text {
+  box-shadow: 0px 0px 2px;
+}
+
+.books .con:hover .img {
+  border: 5px solid var(--main-color);
+}
+
+.books .con:hover .img-layer {
+  opacity: 1;
+  padding: 38%;
+}
+
+.books .con:hover button {
+  background: var(--main-color);
+}
+
+.full-layer {
+  width: 100%;
+  height: 100%;
+  background: #dcdcdc70;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.full-layer img {
+  height: 300px;
+  padding: 40px 60px;
+  position: fixed;
+  background: #e0e0e0;
+  box-shadow: 0px 0px 2px;
+  top: 38%;
+  left: 38%;
+  border-radius: 4px;
+}
+
+@media (max-width: 786px) {
+  .full-layer img {
+    top: 17%;
+    left: 21%;
+  }
+}
+
+.books div.pagination {
+  width: 100%;
+  border-top: 1px solid gainsboro;
+  margin-top: 35px;
+  padding-top: 10px;
+}
+
+.books .pagination li:hover a,
+.books .pagination li .active {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: #fff;
+}
+
+.books .pagination li a {
+  color: #000;
+  margin: 5px;
+  font-weight: bold;
+  padding: 8px 14px;
+}
+
+/* /books */
+
+/* aside */
+
+aside .input-gr {
+  position: relative;
+}
+
+aside .input-gr input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.5s;
+}
+
+aside .input-gr span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: var(--main-color);
+  padding: 16px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+aside input:focus {
+  border: 1px solid #000;
+  background-color: gainsboro;
+}
+
+aside h3 {
+  font-weight: bold;
+  position: relative;
+  margin: 35px 0px;
+}
+
+aside h3.line::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background: gainsboro;
+  left: 0px;
+  margin-bottom: -10px;
+}
+
+aside ul li {
+  border-bottom: 1px solid gainsboro;
+  padding: 10px 0px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: gainsboro;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+aside ul li a:hover {
+  color: var(--main-color);
+}
+
+aside ul li a span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+aside .part-2 .con2 .pic {
+  height: 75px;
+  width: 70px;
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+aside .part-2 .con2 .pic1 {
+  background-image: url(../imgs/book1.jpg);
+}
+
+aside .part-2 .con2 .pic2 {
+  background-image: url(../imgs/book2.jpg);
+}
+
+aside .part-2 .con2 .pic3 {
+  background-image: url(../imgs/book3.jpg);
+}
+
+aside .part-2 .con2 .pic .pic-layer {
+  position: absolute;
+  background: var(--lighter-color);
+  top: 0%;
+  opacity: 0;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40%;
+}
+
+aside .part-2 .con2 .pic .pic-layer a {
+  color: #fff;
+}
+
+aside .part-2 .con2 .pic .pic-layer a:hover {
+  color: #000;
+}
+
+aside .part-2 .con2 .pic .pic-layer i {
+  transform: rotateY(180deg);
+}
+
+aside .part-2 .con2:hover .pic .pic-layer {
+  opacity: 1;
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotatey(0);
+  }
+
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
+aside .part-2 .con2 .pic:hover {
+  background-size: 90%;
+}
+
+aside .part-2 .con2 h5 a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+aside .part-2 .con2 h5 a:hover {
+  color: var(--main-color);
+}
+
+aside .part-2 .con2 p {
+  color: #a7a6a6;
+  margin-bottom: 30px;
+}
+
+aside .part-2 .con2 p > i {
+  margin-right: 5px;
+  color: var(--main-color);
+}
+
+aside .part-4 a {
+  color: #a9a9a9;
+  font-weight: bold;
+  margin: 9px 7px 0px 0px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+aside .part-4 a:hover {
+  color: var(--main-color);
+}
+
+/* /aside */
+
+/**** Custom styles for noUiSlider ****/
+.noUi-connect {
+  background: purple;
+}
+.noUi-horizontal .noUi-handle,
+.noUi-vertical .noUi-handle {
+  background: purple;
+}
+.noUi-target.noUi-horizontal .noUi-tooltip {
+  background-color: purple;
+}
+
+/**** Custom styles for Range ****/
+input[type="range"]::-webkit-slider-thumb {
+  background-color: skyblue;
+}
+input[type="range"]::-moz-range-thumb {
+  background-color: skyblue;
+}
+input[type="range"]::-ms-thumb {
+  background-color: skyblue;
+}
+/* For the globe and the text inside */
+input[type="range"] + .thumb {
+  background-color: blue;
+}
+input[type="range"] + .thumb.active .value {
+  color: #fff;
+}

@@ -1,0 +1,391 @@
+/* poster */
+.poster {
+  background-image: url(../imgs/about-poster.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.poster .layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 85px 0px;
+}
+
+.poster .layer h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* /poster */
+
+/* breadcrumb */
+.breadcrumb {
+  margin-bottom: 70px;
+  padding: 0px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  padding: 18px 2px;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "\f531";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+.breadcrumb li:not(:last-child) a:hover {
+  color: var(--main-color);
+}
+
+.breadcrumb button {
+  background: var(--main-color);
+  padding: 15px 30px;
+  border: 0px;
+}
+
+.breadcrumb button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.breadcrumb button:hover {
+  background-color: #353030;
+}
+
+/* /breadcrumb */
+.che-sol h3 {
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .che-sol .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-md-3 {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.che-sol .img-responsive {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.part-1 ul {
+  background: #f3f3f3;
+}
+
+.part-1 ul li a {
+  padding: 15px 26px 15px 20px;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: bold;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+
+.part-1 ul li a span {
+  color: transparent;
+  font-size: 11px;
+  top: 6px;
+}
+
+.part-1 ul li a:hover,
+.part-1 ul li[class="active"] a {
+  background: var(--main-color);
+  border-left: 5px solid rgb(24, 1, 105);
+  color: #fff;
+}
+
+.part-1 ul li a:hover span,
+.part-1 ul li[class="active"] a span {
+  color: #fff;
+}
+
+.part-1-right span {
+  display: inline-block;
+  width: 85px;
+  border-top: 2px solid #eaeaea;
+  margin-top: 5px;
+  padding-bottom: 35px;
+}
+
+.part-1-right h3:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.part-1-right p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b5b5b5;
+}
+
+.part-1-right h3:last-child {
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 80px;
+}
+
+.part-2 > span {
+  display: inline-block;
+  width: 85px;
+  border-top: 2px solid #eaeaea;
+  margin-top: 5px;
+  padding-bottom: 25px;
+}
+
+.part-2 ul {
+  background: #f3f3f3;
+}
+
+.part-2 ul li i {
+  position: relative;
+  left: -22px;
+  background: #0a0a4e;
+  color: #fff;
+  padding: 9px 12px;
+  font-size: 23px;
+}
+
+.part-2 ul li a {
+  padding: 9px 26px 9px 20px;
+  font-size: 16px;
+  display: inline-block;
+  font-weight: bold;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+}
+
+.part-2 ul li a span {
+  font-size: 11px;
+  top: 16px;
+}
+
+.part-2 ul li a:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.part-2 ul li a:hover span {
+  color: #fff;
+}
+
+.part-2-right .panel-heading {
+  padding: 0px;
+  background-color: #fff;
+}
+
+.part-2-right .panel-title > a {
+  padding: 15px 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.part-2-right .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  color: #b7b7b7;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.part-2-right .panel-title > a:hover,
+.part-2-right .panel-title > a:focus {
+  text-decoration: none;
+}
+
+.part-2-right .glyphicon {
+  padding: 4px 8px;
+  background-color: rgb(24, 24, 87);
+  color: #fff;
+  top: -2px;
+  font-size: 12px;
+}
+
+.part-2-right .glyphicon:last-child {
+  left: 28px;
+  background: var(--main-color);
+}
+
+.z {
+  z-index: 1;
+}
+
+.part-3 > span {
+  display: inline-block;
+  width: 85px;
+  border-top: 2px solid #eaeaea;
+  margin-top: 5px;
+  padding-bottom: 25px;
+}
+
+.part-3 .text {
+  background: #00003e;
+  color: #fff;
+  padding: 30px 0px 10px 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+.part-3 .text .layer {
+  background: var(--main-color);
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  top: -65px;
+  left: -75px;
+  transform: rotate(45deg);
+}
+
+.part-3 .text i.fa-quote-right {
+  position: absolute;
+  top: 10px;
+  z-index: 11;
+  left: 10px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.part-3 .text-con {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.part-3 .text-con::after {
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-bottom: 14px solid #00003e;
+  bottom: -13px;
+  border-right: 10px solid transparent;
+  transform: rotate(180deg);
+  left: 26px;
+}
+
+.part-3 img {
+  margin-right: 10px;
+}
+
+.part-3 h4 {
+  padding-top: 15px;
+}
+
+.part-3 h4 small {
+  color: #00003e;
+}
+
+.part-3 i {
+  color: gold;
+}
+
+.part-3-right {
+  margin-top: 50px;
+}
+
+.part-3-right > span {
+  display: block;
+  width: 85px;
+  border-top: 2px solid #eaeaea;
+  margin-top: 5px;
+  padding-bottom: 40px;
+}
+
+.part-3-right i {
+  font-size: 37px;
+  padding: 16px;
+  background: var(--main-color);
+  border-radius: 50%;
+  color: #fff;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  line-height: 45px;
+  margin: 6px 40px 25px 0px;
+}
+
+.part-3-right h4 {
+  font-weight: bold;
+}
+
+.part-3-right p {
+  color: #c3c3c3;
+  font-weight: bold;
+  margin-bottom: 65px;
+}
+
+.part-3-right .get-quote {
+  background-image: url(../imgs/about-poster.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.part-3-right .get-quote .layer {
+  min-height: 30px;
+  overflow: auto;
+  background-color: #00003ece;
+  padding: 15px 25px;
+}
+
+.part-3-right .get-quote .layer h4 {
+  margin: 0px;
+  line-height: 1.7;
+}
+
+.part-3-right .get-quote .layer button {
+  border-radius: 0px;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  transition: 0.5s;
+  margin-top: 7px;
+}
+
+.part-3-right .get-quote .layer button a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.part-3-right .get-quote .layer button:hover {
+  background-color: #4c4a4a;
+  border: 2px solid var(--main-color);
+}
+
+@media (min-width: 992px) {
+  .part-3-right .get-quote .layer h4 {
+    float: left;
+    width: 71%;
+  }
+
+  .part-3-right .get-quote .layer button {
+    float: right;
+  }
+}

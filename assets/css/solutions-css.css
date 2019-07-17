@@ -1,0 +1,286 @@
+/* poster */
+.poster {
+  background-image: url(../imgs/about-poster.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.poster .layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 85px;
+}
+
+.poster .layer h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* /poster */
+
+/* breadcrumb */
+.breadcrumb {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  padding: 18px 2px;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+}
+
+.breadcrumb li:first-child::after {
+  content: "\f531";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+.breadcrumb li:first-child a:hover {
+  color: var(--main-color);
+}
+
+.breadcrumb button {
+  background: var(--main-color);
+  padding: 15px 30px;
+  border: 0px;
+}
+
+.breadcrumb button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.breadcrumb button:hover {
+  background-color: #353030;
+}
+
+/* /breadcrumb */
+
+/* sec-1 */
+.sec-1 {
+  padding: 80px 0px 50px;
+}
+
+.sec-1 .left-part {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.sec-1 .left-part .border {
+  border-top: 50px groove;
+  border-left: 50px groove darkgrey;
+  height: 355px;
+}
+
+.sec-1 .left-part .inside {
+  position: absolute;
+  top: 60px;
+  left: 75px;
+  width: 83%;
+}
+
+.sec-1 .left-part .layer {
+  width: 100%;
+  height: 100%;
+  background: #fdc716ad;
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.sec-1 .left-part .inside:hover .layer {
+  opacity: 1;
+}
+
+.sec-1 .left-part .img-responsive {
+  height: 320px;
+  width: 100%;
+}
+
+.sec-1 .left-part i {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  font-size: 55px;
+  color: #fff;
+}
+
+.sec-1 header {
+  padding-left: 20px;
+  border-left: 3px solid #000;
+}
+
+.sec-1 header p {
+  font-weight: bold;
+}
+
+.sec-1 header h2 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.sec-1 .con > p {
+  font-size: 15px;
+  margin: 20px 0px;
+}
+
+.sec-1 .quote {
+  border-left: 3px solid gainsboro;
+  padding-left: 20px;
+}
+
+.sec-1 .quote i {
+  font-size: 25px;
+  color: gainsboro;
+}
+
+.sec-1 .quote p {
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+.sec-1 .con span {
+  color: var(--main-color);
+}
+
+.sec-1 .con p span {
+  display: block;
+  padding-top: 10px;
+}
+
+/* /sec-1 */
+
+/* solutions */
+.solutions {
+  padding: 60px 0px;
+}
+
+.solutions header {
+  padding-left: 20px;
+  border-left: 3px solid #000;
+}
+
+.solutions header p {
+  font-weight: bold;
+}
+
+.solutions header h2 {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.solutions .img {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+
+.solutions .img1 {
+  background-image: url(../imgs/our-services-img1.jpg);
+}
+
+.solutions .img2 {
+  background-image: url(../imgs/our-services-img2.jpg);
+}
+
+.solutions .img3 {
+  background-image: url(../imgs/our-services-img3.jpg);
+}
+
+.solutions .img4 {
+  background-image: url(../imgs/our-services-img4.jpg);
+}
+
+.solutions .img5 {
+  background-image: url(../imgs/our-services-img5.jpg);
+}
+
+.solutions .img6 {
+  background-image: url(../imgs/our-services-img6.jpg);
+}
+
+.solutions .img .img-layer {
+  position: absolute;
+  background: #350dc49d;
+  top: 0%;
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10% 0%;
+}
+
+.solutions button {
+  border-radius: 0px;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  transition: 1s;
+}
+
+.solutions button a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.solutions button:hover {
+  background-color: #4c4a4a;
+  border: 2px solid var(--main-color);
+}
+
+.solutions i {
+  font-size: 30px;
+  background: rgb(235, 233, 233);
+  padding: 15px;
+  margin-left: -15px;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+.solutions .con:hover .img-layer {
+  opacity: 1;
+  border: 5px solid var(--main-color);
+  padding: 20% 0%;
+}
+
+.solutions .con:hover i {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.solutions h4 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.solutions p:last-child {
+  font-size: 14px;
+  font-weight: bold;
+  color: darkgray;
+  margin-bottom: 60px;
+}
+
+/* /solutions */

@@ -1,0 +1,403 @@
+/* poster */
+.poster {
+  background-image: url(../imgs/about-poster.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.poster .layer {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 85px 0px;
+}
+
+.poster .layer h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* /poster */
+
+/* breadcrumb */
+.breadcrumb {
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.breadcrumb li {
+  display: inline-block;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  padding: 18px 2px;
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+}
+
+.breadcrumb li:first-child::after {
+  content: "\f531";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  padding-left: 7px;
+}
+
+.breadcrumb li:first-child a:hover {
+  color: var(--main-color);
+}
+
+.breadcrumb button {
+  background: var(--main-color);
+  padding: 15px 30px;
+  border: 0px;
+}
+
+.breadcrumb button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.breadcrumb button:hover {
+  background-color: #353030;
+}
+
+/* /breadcrumb */
+
+/* news */
+
+.news {
+  margin: 60px 0px;
+}
+
+.news .con {
+  padding: 20px;
+  border: 1px solid gainsboro;
+  margin-bottom: 60px;
+}
+
+.news .con .img {
+  width: 100%;
+  height: 475px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .news .con .img {
+    height: 245px;
+  }
+}
+
+.news .con .img1 {
+  background-image: url(../imgs/che-sol-pic1.jpg);
+}
+
+.news .con .img2 {
+  background-image: url(../imgs/tech-1.jpg);
+}
+
+.news .con .img3 {
+  background-image: url(../imgs/mech-2.jpg);
+}
+
+.news .con .img .img-layer {
+  position: absolute;
+  background: #18016be0;
+  top: 0%;
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10% 0%;
+}
+
+.news .con button {
+  border-radius: 0px;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
+  transition: 1s;
+}
+
+.news .con button a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.news .con button:hover {
+  background-color: #4c4a4a;
+  border: 2px solid var(--main-color);
+}
+
+.news .con:hover .img-layer {
+  opacity: 1;
+  border: 5px solid var(--main-color);
+  padding: 25% 0%;
+}
+
+.news .con h4 a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.news .con h4 a:hover {
+  color: var(--main-color);
+}
+
+.news .con a {
+  text-decoration: none;
+  color: gainsboro;
+  font-weight: bold;
+}
+
+.news .con i {
+  color: var(--main-color);
+  margin: 0px 10px;
+}
+
+.news .con > a:first-of-type {
+  margin-left: -10px;
+}
+
+.news .con p {
+  font-size: 14px;
+  font-weight: bold;
+  color: gainsboro;
+  margin: 20px 0px;
+}
+
+.news .con p:first-of-type {
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.news .con p:first-of-type::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  bottom: -1px;
+  left: 0px;
+  background: var(--main-color);
+  transition: 1s ease-in-out;
+}
+
+.news .con:hover p:first-of-type::after {
+  width: 100%;
+}
+
+.news .con h5 {
+  font-weight: bold;
+  margin: 23px 75px 5px;
+  font-size: 18px;
+}
+
+.news .con p:last-child {
+  margin: 0px 75px;
+  color: #565696;
+}
+
+.news .pagination li:hover a,
+.news .pagination li .active {
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  color: #fff;
+}
+
+.news .pagination li a {
+  color: #000;
+  margin: 5px;
+  font-weight: bold;
+  padding: 8px 14px;
+}
+
+.pagination > li > a:focus {
+  background-color: transparent;
+  border: 1px solid gainsboro;
+}
+
+a:focus {
+  outline: 0px;
+}
+
+/* aside */
+
+.news .input-gr {
+  position: relative;
+}
+
+.news .input-gr input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid gainsboro;
+  padding: 10px;
+  font-weight: bold;
+  outline: none;
+  transition: 0.5s;
+}
+
+.news .input-gr span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: var(--main-color);
+  padding: 16px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.news input:focus {
+  border: 1px solid #000;
+  background-color: gainsboro;
+}
+
+.news aside h3 {
+  font-weight: bold;
+  position: relative;
+  margin: 35px 0px;
+}
+
+.news aside h3.line::after {
+  content: "";
+  width: 60px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background: gainsboro;
+  left: 0px;
+  margin-bottom: -10px;
+}
+
+.news aside ul li {
+  border-bottom: 1px solid gainsboro;
+  padding: 10px 0px;
+}
+
+.news aside ul li a {
+  text-decoration: none;
+  color: gainsboro;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.news aside ul li a:hover {
+  color: var(--main-color);
+}
+
+.news aside ul li a span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.news aside .part-2 .con2 .pic {
+  height: 75px;
+  width: 70px;
+  margin-right: 15px;
+  overflow: hidden;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.news aside .part-2 .con2 .pic1 {
+  background-image: url(../imgs/chem-2.jpg);
+}
+
+.news aside .part-2 .con2 .pic2 {
+  background-image: url(../imgs/tech-1.jpg);
+}
+
+.news aside .part-2 .con2 .pic3 {
+  background-image: url(../imgs/agri-2.jpg);
+}
+
+.news aside .part-2 .con2 .pic .pic-layer {
+  position: absolute;
+  background: var(--lighter-color);
+  top: 0%;
+  opacity: 0;
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40%;
+}
+
+.news aside .part-2 .con2 .pic .pic-layer a {
+  color: #fff;
+}
+
+.news aside .part-2 .con2 .pic .pic-layer a:hover {
+  color: #000;
+}
+
+.news aside .part-2 .con2 .pic .pic-layer i {
+  transform: rotateY(180deg);
+}
+
+.news aside .part-2 .con2:hover .pic .pic-layer {
+  opacity: 1;
+  animation: rotate 1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotatey(0);
+  }
+
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
+.news aside .part-2 .con2 h5 a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+.news aside .part-2 .con2 h5 a:hover {
+  color: var(--main-color);
+}
+
+.news aside .part-2 .con2 p {
+  color: #a7a6a6;
+  margin-bottom: 30px;
+}
+
+.news aside .part-2 .con2 p > i {
+  margin-right: 5px;
+  color: var(--main-color);
+}
+
+.news aside .part-4 a {
+  color: #a9a9a9;
+  font-weight: bold;
+  margin: 9px 7px 0px 0px;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.news aside .part-4 a:hover {
+  color: var(--main-color);
+}
+
+/* /news */
